@@ -23,6 +23,9 @@ jobs:
 
       - name: setup Poetry enviroment
         run: poetry env use 3.9.17
+        
+      - name: poetry lock
+        run: poetry lock --no-update
 
       - name: Install Dependencies
         run: poetry install
